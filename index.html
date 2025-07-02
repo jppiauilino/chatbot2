@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Chatbot</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="toast-container"></div> <div class="container">
+        <h1>Painel de Controle do Chatbot</h1>
+        
+        <div id="main-view">
+            <div class="main-controls">
+                <button id="start-stop-btn">▶️ Iniciar Bot</button>
+                <button id="edit-btn">✏️ Editar Respostas</button>
+                <button id="exit-btn">❌ Sair</button>
+            </div>
+            <div class="status-box">
+                <div id="qrcode-container"></div>
+                <pre id="output-box">O bot está inativo. Clique em 'Iniciar' para começar.</pre>
+            </div>
+        </div>
+
+        <div id="editor-view" class="hidden">
+            <h2>Editor de Mensagens</h2>
+            <div id="visual-editor" class="visual-editor-container">
+                </div>
+            <div class="editor-controls">
+                <button id="save-btn">Salvar e Reiniciar</button>
+                <button id="cancel-btn">Voltar ao Painel</button>
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>

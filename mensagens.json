@@ -1,0 +1,127 @@
+{
+  "boasVindas": {
+    "titulo": "Olá, {NOME_CLIENTE}, tudo bem? Como posso te ajudar hoje?",
+    "menu": {
+      "1": { "texto": "Conheça nossos planos", "acao": "submenu_nossosPlanos" },
+      "2": { "texto": "Setor Financeiro", "acao": "submenu_setorFinanceiro" },
+      "3": { "texto": "Ajuda com a plataforma", "acao": "submenu_ajuda" },
+      "4": { "texto": "Agendar serviços", "acao": "submenu_agendar" }
+    }
+  },
+  "submenu_nossosPlanos": {
+    "mensagens": [
+      {
+        "tipo": "texto",
+        "conteudo": [
+          "*Comodato Premium:*",
+          "",
+          "*Adesão: R$ 200,00*",
+          "*Mensal: R$ 50,00*",
+          "",
+          "- ACESSO 24 HORAS VIA APP",
+          "- BLOQUEIO E DESBLOQUEIO",
+          "- CENTRAL 24H + WHATSAPP",
+          "- SUPORTE TÉCNICO",
+          "- EQUIPE DE BUSCA"
+        ]
+      },
+      {
+        "tipo": "texto",
+        "delay": 2000,
+        "conteudo": [
+          "*Comodato Plus Completo:*",
+          "",
+          "*Adesão: R$ 300,00*",
+          "*Mensal: R$ 40,00*",
+          "",
+          "- ACESSO 24 HORAS VIA APP",
+          "- BLOQUEIO E DESBLOQUEIO",
+          "- CENTRAL 24H + WHATSAPP",
+          "- SUPORTE TÉCNICO",
+          "- EQUIPE DE BUSCA",
+          "- ANTIFURTO VIRTUAL",
+          "- NOTIFICAÇÕES NO APP",
+          "- HISTORICO DE POSIÇÕES"
+        ]
+      },
+      {
+        "tipo": "texto",
+        "delay": 2000,
+        "conteudo": [
+          "*Compra plano Prata, sem mensalidade:*",
+          "",
+          "*Valor do equipamento: R$ 650,00*",
+          "*Renovação Anual: R$ 350,00*",
+          "",
+          "- 1 ANO DE USO DA PLATAFORMA",
+          "- INSTALAÇÃO GRÁTIS",
+          "- LOCALIZAÇÃO 24H",
+          "- BLOQUEIO REMOTO"
+        ]
+      },
+      {
+        "tipo": "texto",
+        "delay": 2000,
+        "conteudo": [
+          "*Compra plano Ouro, sem mensalidade:*",
+          "",
+          "*Valor do equipamento: R$ 850,00*",
+          "*Renovação Anual: R$ 350,00*",
+          "",
+          "- EQUIPAMENTO É SEU",
+          "- 1 ANO DE USO DA PLATAFORMA",
+          "- SUPORTE TÉCNICO",
+          "- LOCALIZAÇÃO 24H",
+          "- BLOQUEIO REMOTO",
+          "- PRONTA-RESPOSTA",
+          "- INSTALAÇÃO GRÁTIS"
+        ]
+      },
+      {
+        "tipo": "menu",
+        "conteudo": {
+          "titulo": "\nDigite uma opção:",
+          "menu": {
+            "0": { "texto": "Voltar ao menu principal", "acao": "boasVindas" }
+          }
+        }
+      }
+    ]
+  },
+  "submenu_setorFinanceiro": {
+    "titulo": "Certo! Sobre o financeiro, em que posso ajudar?",
+    "menu": {
+      "1": { "texto": "Quero efetuar meu pagamento, me envie o boleto.", "acao": "resposta_outros" },
+      "2": { "texto": "Quero enviar a foto do meu comprovante.", "acao": "resposta_outros" },
+      "3": { "texto": "Divergência em minha mensalidade.", "acao": "resposta_outros" },
+      "0": { "texto": "Voltar ao menu principal", "acao": "boasVindas" }
+    }
+  },
+  "submenu_ajuda": {
+    "titulo": "Claro, vamos resolver isso. Qual sua dúvida?",
+    "menu": {
+      "1": { "texto": "Esqueci minha senha e/ou meu usuário", "acao": "resposta_outros" },
+      "2": { "texto": "Não consigo acessar a plataforma", "acao": "resposta_outros" },
+      "3": { "texto": "Veículo sem posição", "acao": "resposta_outros" },
+      "4": { "texto": "Solicitar manutenção em meu equipamento", "acao": "resposta_outros" },
+      "0": { "texto": "Voltar ao menu principal", "acao": "boasVindas" }
+    }
+  },
+  "submenu_agendar": {
+    "titulo": "Sobre agendamentos, qual sua necessidade?",
+    "menu": {
+      "1": { "texto": "Quero agendar com vocês", "acao": "resposta_outros" },
+      "2": { "texto": "Valores das prestações de serviços", "acao": "resposta_outros" },
+      "3": { "texto": "Problemas ou dúvidas sobre um agendamento", "acao": "resposta_outros" },
+      "0": { "texto": "Voltar ao menu principal", "acao": "boasVindas" }
+    }
+  },
+  "resposta_outros": {
+    "mensagens": [
+      {
+        "tipo": "texto",
+        "conteudo": "Entendido. Um de nossos atendentes irá te responder em alguns instantes. Por favor, aguarde."
+      }
+    ]
+  }
+}
